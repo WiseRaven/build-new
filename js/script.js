@@ -15,6 +15,6 @@
             });
             $('.poput_okay').click(function () {
                 $('#shadow').show();
-                $('#window').slideToggle(500);
+                $('#window').show(200);
             });
         })
