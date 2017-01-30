@@ -1,0 +1,316 @@
+#shadow {
+    background: black;
+    height: 100%;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#window {
+    position: fixed;
+    left: 50%;
+    top: 59%;
+    margin-left: -150px;
+    margin-top: -250px;
+    border: 1px solid black;
+    display: none;
+    z-index: 99;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+#close {
+    background: url("../img/closebox.png") 50% 50% no-repeat transparent;
+    border: medium none currentColor;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 30px;
+}
+
+.form_application {
+    overflow: hidden;
+    border: 2px solid #fff;
+    padding: 20px 35px 20px 35px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #d6dadd;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+header .top-inner form button {
+    display: none;
+    font-style: normal;
+    margin-bottom: 0px;
+    color: #541600;
+    padding: 8px 13px;
+    background: #fed217;
+    font-weight: 600;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+    border-radius: 10px;
+    width: 100%;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+header .top-inner form button:hover {
+    background: palegoldenrod;
+    color: saddlebrown;
+    border: 1px solid #fed217;
+}
+
+.applicationTitle1 {
+    display: block;
+    font-family: 'Arial';
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3a3a3a;
+    box-shadow: inset 90px 0px 42px rgba(226, 244, 80, 0.7);
+    border-radius: 68px;
+}
+
+.poput_forma {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #3a3a3a;
+    font-family: 'Arial';
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #d6dadd;
+}
+
+.poput_forma:focus {
+    border: 1px solid #3a3a3a;
+}
+
+.poput_forma_btn {
+    font-style: normal;
+    cursor: pointer;
+    margin-bottom: 0px;
+    color: #541600;
+    padding: 8px 13px;
+    background: #fed217;
+    font-weight: 600;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+    width: 100%;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.applicationSubmit1 {
+    font-style: normal;
+    margin-bottom: 0px;
+    color: #541600;
+    padding: 8px 13px;
+    background: #fed217;
+    font-weight: 600;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+    width: 100%;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+.applicationSubmit1:hover {
+    background: palegoldenrod;
+    color: saddlebrown;
+    border: 1px solid #fed217;
+}
+
+.overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    position: fixed;
+    cursor: default;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    top: 0;
+    right: 0;
+    left: 0;
+    font-size: 14px;
+    z-index: 10;
+    display: block;
+    visibility: hidden;
+    margin: 0 auto;
+    width: 90%;
+    min-width: 320px;
+    max-width: 600px;
+    position: fixed;
+    padding: 15px;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    -ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    -o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s;
+}
+
+.overlay:target+.popup {
+    top: 20%;
+    visibility: visible;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 15;
+}
+
+header .top-inner form {
+    overflow: hidden;
+    border: 2px solid #fff;
+    padding: 20px 35px 20px 35px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #d6dadd;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+header .top-inner form button {
+    display: none;
+    font-style: normal;
+    margin-bottom: 0px;
+    color: #541600;
+    padding: 8px 13px;
+    background: #fed217;
+    font-weight: 600;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+    border-radius: 10px;
+    width: 100%;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+header .top-inner form button:hover {
+    background: palegoldenrod;
+    color: saddlebrown;
+    border: 1px solid #fed217;
+}
+
+header .top-inner form title {
+    display: block;
+    font-family: 'Arial';
+    font-size: 27px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #3a3a3a;
+    box-shadow: inset 90px 0px 42px rgba(226, 244, 80, 0.7);
+    border-radius: 68px;
+}
+
+header .top-inner form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    color: #3a3a3a;
+    font-family: 'Arial';
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 15px;
+    border: 1px solid #999;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px #d6dadd;
+}
+
+header .top-inner form input:focus {
+    border: 1px solid #3a3a3a;
+}
+
+header .top-inner form input[type="submit"] {
+    font-style: normal;
+    margin-bottom: 0px;
+    color: #541600;
+    padding: 8px 13px;
+    background: #fed217;
+    font-weight: 600;
+    border: 1px solid orange;
+    box-shadow: 0 0 4px orange;
+    width: 100%;
+    -webkit-transition-property: background, color;
+    transition-property: background, color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+}
+
+header .top-inner form input[type="submit"]:hover {
+    background: palegoldenrod;
+    color: saddlebrown;
+    border: 1px solid #fed217;
+}
+
+.close {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    box-shadow: 0px 0px 10px #000;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 20px;
+    -webkit-transition: all ease .8s;
+    transition: all ease .8s;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+}
+
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
