@@ -12,10 +12,11 @@
 
 #window {
     position: fixed;
+    width: 308px;
     left: 50%;
-    top: 59%;
-    margin-left: -150px;
-    margin-top: -250px;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border: 1px solid black;
     display: none;
     z-index: 99;
